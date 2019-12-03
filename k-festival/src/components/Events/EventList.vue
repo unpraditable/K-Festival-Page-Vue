@@ -1,6 +1,16 @@
+<script>
+    import EventBanner from './EventBanner.vue';
+    export default {
+        name: 'EventList',
+        components: {
+            EventBanner
+        }
+    }
+</script>
+
 <template>
-    <div class="col-xs-12 content no-pad">
-        <section class="col-xs-12 section section-navigation">
+    <div class="col-12 content no-pad">
+        <section class="col-12 section section-navigation">
             
             <a class="anchor-wrapper map-anchor-wrapper pull-right hidden-xs" onclick="smoothScroll('.section-map')">
                 MAP
@@ -11,65 +21,38 @@
             
 
         </section>
-        <section class="col-xs-12 section section-banner">
-            <div class="col-xs-12 banner-slide" align="center">
-                <!-- -->
-                <a href="#k-content-expo-2019" title="K-Content Expo 2019">
-                    <div class="banner-slide-item" align="center">
-                        <img class="bg-slider" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/billboards/mbb_kcontent.jpg" width="100%" alt="K-Content Event Billboard">
-                    </div>
-                </a>
 
-                <a href="#seoul-food-from-home" title="Seoul Food From Home">
-                    <div class="banner-slide-item" align="center">
-                        <img class="bg-slider" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/billboards/mbb_kfood.jpg" width="100%" alt="Seoul Food From Home">
-                    </div>
-                </a>
-                
-                <a href="#hangul-day" title="Hangul Day">
-                    <div class="banner-slide-item" align="center">
-                        <img class="bg-slider" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/billboards/mbb_hangulday.jpg" width="100%" alt="Hangul Day Event Billboard">
-                    </div>
-                </a>
+        <EventBanner/>
 
-                <a href="#korea-indonesia-film-festival" title="Korea Indonesia Film Festival">
-                    <div class="banner-slide-item" align="center">
-                        <img class="bg-slider" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/billboards/mbb_koreanculture.jpg" width="100%" alt="Korea - Indonesia 10th Film Festival Billboard">
-                    </div>
-                </a>
-                
-            </div>
-        </section>
-
-        <section class="col-xs-12 section section-event">
-            <div class="col-xs-12 event-header" align="left">
+        <section class="col-12 section section-event">
+            <div class="col-12 event-header" align="left">
                 <h2 class="head-gibson main-head"><i class="h2-icon event-icon"></i>EVENT LIST</h2>
             </div>
-            <div class="col-xs-12 event-body">
-            <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+            <div class="col-12 event-body">
+            <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             17
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             SEPT
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             -
                         </div>
-                        <div class="col-xs-12 event-date-day" align="left">
+                        <div class="col-12 event-date-day" align="left">
                             31
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OCT
                         </div>
                     </div>
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#korean-bazaar-on-sale" title="Korean Bazaar - On Sale">
-                            <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/poster_thumb_koreanbazaar.jpg" width="100%"/ alt="Korean Bazaar - On Sale Thumbnail">
+                            <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/poster_thumb_koreanbazaar.jpg" width="100%" alt="Korean Bazaar - On Sale Thumbnail" />
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#korean-bazaar-on-sale" title="K-Exhibition Expo">
                             <h3>Korean Bazaar - On Sale</h3>
                         </a>
@@ -84,22 +67,22 @@
                     </div>
                 </div>
                 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-food">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-food">
+                        <div class="col-12 event-date-day" align="left">
                             01 - 31
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#korean-food-festival" title='Korean Food Festival "Korea Dekat Di Hati"'>
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/poster_thumb_dekatdihati.jpg" width="100%" alt="Korean Food Festival Thumbnail"/>
                         </a>
 
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#korean-food-festival" title='Korean Food Festival "Korea Dekat Di Hati"'>
                             <h3>Korean Food Festival "Korea Dekat Di Hati"</h3>
                         </a>
@@ -126,21 +109,21 @@
                     </div>
                 </div>
             
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-content">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-content">
+                        <div class="col-12 event-date-day" align="left">
                             03 - 06
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#k-content-expo-2019" title="K-Content Expo">
-                            <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DK-Content%20Expo.jpeg" width="100%"/ alt="K-Content Expo Thumbnail">
+                            <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DK-Content%20Expo.jpeg" width="100%" alt="K-Content Expo Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#k-content-expo-2019" title="K-Content Expo">
                             <h3>K-Content Expo</h3>
                         </a>
@@ -155,22 +138,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-food">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-food">
+                        <div class="col-12 event-date-day" align="left">
                             03 - 13
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#seoul-food-from-home" title="Seoul Food From Homel">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/poster_thumb_kfood.jpg" width="100%"/>
                         </a>
 
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#seoul-food-from-home" title="Seoul Food From Home">
                             <h3>Seoul Food From Home</h3>
                         </a>
@@ -185,22 +168,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-content">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-content">
+                        <div class="col-12 event-date-day" align="left">
                             09
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#hangul-day" title="Hangul Day (Hari Huruf Korea)">
-                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DHangul%20Day.jpg" width="100%"/ alt="Hangul Day Thumbnail">
+                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DHangul%20Day.jpg" width="100%" alt="Hangul Day Thumbnail" />
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#hangul-day" title="Hangul Day (Hari Huruf Korea)">
                             <h3>Hangul Day (Hari Huruf Korea)</h3>
                         </a>
@@ -215,22 +198,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-content">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-content">
+                        <div class="col-12 event-date-day" align="left">
                             10 - 13
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#korea-indonesia-film-festival-2019" title="Korea-Indonesia Film Festival 2019">
-                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DKorea%20Indonesia%20Film%20Festival.jpg" width="100%"/ alt="Korea Indonesia Film Festival Thumbnail">
+                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DKorea%20Indonesia%20Film%20Festival.jpg" width="100%" alt="Korea Indonesia Film Festival Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#korea-indonesia-film-festival-2019" title="Korea-Indonesia Film Festival 2019">
                             <h3>Korea-Indonesia Film Festival 2019</h3>
                         </a>
@@ -245,22 +228,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             16 - 17
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#flying" title="FLYING">
-                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DNon-Verbal%20Performance%20%27Flying%27%20revised.jpg" width="100%"/ alt="FLYING thumbnail">
+                            <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DNon-Verbal%20Performance%20%27Flying%27%20revised.jpg" width="100%" alt="FLYING thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#flying" title="FLYING">
                             <h3>FLYING</h3>
                         </a>
@@ -275,22 +258,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 20
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#k-pop-concert" title="K-Pop Concert">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DK-Pop-Concert-1.jpg" width="100%" alt="K-Pop Concert Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#k-pop-concert" title="K-Pop Concert">
                             <h3>K-Pop Concert</h3>
                         </a>
@@ -305,22 +288,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 20
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#follow-gyeonggi-k-culture-festa-2019" title="Follow Gyeonggi K-Culture FESTA 2019">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DK-Pop-Concert-2.jpg" width="100%" alt="Follow Gyeonggi K-Culture FESTA 2019 Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#follow-gyeonggi-k-culture-festa-2019" title="Follow Gyeonggi K-Culture FESTA 2019">
                             <h3>Follow Gyeonggi K-Culture FESTA 2019</h3>
                         </a>
@@ -335,22 +318,22 @@
                     </div>
                 </div>
                 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 20
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#follow-gyeonggi-k-culture-festa-2019-istora-senayan-outside-square" title="Follow Gyeonggi K-Culture FESTA 2019">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DK-Pop-Concert-2.jpg" width="100%" alt="Follow Gyeonggi K-Culture FESTA 2019 Outside Square Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#follow-gyeonggi-k-culture-festa-2019-istora-senayan-outside-square" title="Follow Gyeonggi K-Culture FESTA 2019 (Outside Senayan Square">
                             <h3>Follow Gyeonggi K-Culture FESTA 2019 (Istora Senayan Outside Square)</h3>
                         </a>
@@ -365,22 +348,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 20
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#the-best-k-pop-cover-in-indonesia" title="2019 The Best K-POP Cover in Indonesia">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5Bposter%5DThe%20Best%20K-Pop%20Cover%20in%20Indonesia.png" width="100%" alt="2019 The Best K-Pop Cover In Indonesia Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#the-best-k-pop-cover-in-indonesia" title="2019 The Best K-POP Cover in Indonesia">
                             <h3>2019 The Best K-POP Cover in Indonesia</h3>
                         </a>
@@ -395,22 +378,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-content">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-content">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 25
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#the-6th-korean-cultural-art-association-festival" title="The 6th Korean Cultural Art Association Festival">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DThe%206th%20Korean%20Cultural%20Art%20Association%20Festival.jpg" width="100%" alt="The 6th Korean Cultural Art Association Festival Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#the-6th-korean-cultural-art-association-festival" title="The 6th Korean Cultural Art Association Festival">
                             <h3>The 6th Korean Cultural Art Association Festival</h3>
                         </a>
@@ -425,22 +408,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             19 - 25
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#dicapoem-exhibition" title="DICAPOEM Exhibition">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DDICAPOEM%20Exhibition.jpg" width="100%" alt="DICAPOEM Exhibition Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#dicapoem-exhibition" title="DICAPOEM Exhibition">
                             <h3>DICAPOEM Exhibition</h3>
                         </a>
@@ -456,22 +439,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             26
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#hanhwa-life-activation-program-2019" title="Hanwha Life Activation Program 2019">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DHanwha%20Life%20Activation%20Program%202019.jpeg" width="100%" alt="Hanwha Life Activation Program 2019 Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#hanhwa-life-activation-program-2019" title="Hanwha Life Activation Program 2019">
                             <h3>Hanwha Life Activation Program 2019</h3>
                         </a>
@@ -486,22 +469,22 @@
                     </div>
                 </div>
                 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             26
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#korea-culture-brand-festival" title="DICAPOEM Exhibition">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DKorea%20Culture%20Brand%20Festival.jpeg" width="100%" alt="Korea Culture Brand Festival Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#korea-culture-brand-festival" title="DICAPOEM Exhibition">
                             <h3>Korea Culture Brand Festival</h3>
                         </a>
@@ -517,22 +500,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             26 - 27
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#2019-asia-taekwondo-hanmadang-championship" title="2019 Asia Taekwondo Hanmadang Championship">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DAsia%20Taekwondo%20Hanmadang%20Championship.jpg" width="100%" alt="2019 Asia Taekwondo Hanmadang Championship Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#2019-asia-taekwondo-hanmadang-championship" title="2019 Asia Taekwondo Hanmadang Championship">
                             <h3>2019 Asia Taekwondo Hanmadang Championship</h3>
                         </a>
@@ -547,22 +530,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             31
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             OKT
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#opening-ceremony-of-korea-corner" title="Opening ceremony of Korea Corner">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DOpening%20Ceremony%20of%20Korea%20Corner.jpg" width="100%" alt="Opening Ceremony of Korea Corner Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#opening-ceremony-of-korea-corner" title="Opening ceremony of Korea Corner">
                             <h3>Opening Ceremony of Korea Corner</h3>
                         </a>
@@ -578,22 +561,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-performance">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-performance">
+                        <div class="col-12 event-date-day" align="left">
                             06
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             NOV
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#asia-traditional-orchestra" title="Asia Traditional Orchestra">
                             <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/poster_thumb_asia_traditional.jpg" width="100%" alt="Asia Traditional Orchestra Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#asia-traditional-orchestra" title="Asia Traditional Orchestra">
                             <h3>Asia Traditional Orchestra</h3>
                         </a>
@@ -609,22 +592,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             07 - 09
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             NOV
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#jakarta-international-premium-products-fair-2019" title="Jakarta International Premium Products Fair 2019">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DJakarta%20%20International%20Premium%20Product%20Fair%202019.png" width="100%" alt="Jakarta International Premium Product Fair 2019 Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#jakarta-international-premium-products-fair-2019" title="Jakarta International Premium Products Fair 2019">
                             <h3>Jakarta International Premium Products Fair 2019</h3>
                         </a>
@@ -640,22 +623,22 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 event-list-item row">
-                    <div class="col-xs-2 col-md-1 event-item-thumbnail k-exhibition">
-                        <div class="col-xs-12 event-date-day" align="left">
+                <div class="col-12 event-list-item row">
+                    <div class="col-2 col-md-1 event-item-thumbnail k-exhibition">
+                        <div class="col-12 event-date-day" align="left">
                             09 - 10
                         </div>
-                        <div class="col-xs-12 event-date-month">
+                        <div class="col-12 event-date-month">
                             NOV
                         </div>
                     </div>
 
-                    <div class="col-xs-5 col-md-3 event-thumb">
+                    <div class="col-5 col-md-3 event-thumb">
                         <a href="#study-in-korea-fair" title="2019 STUDY IN KOREA FAIR IN INDONESIA">
                             <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DStudy%20In%20Korea%20Fair.jpg" width="100%" alt="Study In Korea Fair Thumbnail"/>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-md-8 event-item-caption">
+                    <div class="col-6 col-md-8 event-item-caption">
                         <a href="#study-in-korea-fair" title="2019 STUDY IN KOREA FAIR IN INDONESIA">
                             <h3>2019 STUDY IN KOREA FAIR IN INDONESIA</h3>
                         </a>
@@ -675,16 +658,16 @@
             
         </section>
 
-        <section class="col-xs-12 section section-calendar">
-            <div class="col-xs-12" align="left"> 
+        <section class="col-12 section section-calendar">
+            <div class="col-12" align="left"> 
                 <h2 class="head-gibson main-head"><span class="h2-icon calendar-icon"></span> EVENT CALENDAR OCTOBER & NOVEMBER 2019</h2>
             </div>
             
-            <div class="col-xs-12 col-sm-10 calendar" align="left">
+            <div class="col-12 col-sm-10 calendar" align="left">
                 <div class="fullcalendar"></div>
             </div>
-            <div class="col-xs-12 col-sm-2 calendar-legend" align="right">
-                    <!-- <h2 class="head-gibson col-xs-12" style="color: transparent;">OCTOBER 2019</h2> -->
+            <div class="col-12 col-sm-2 calendar-legend" align="right">
+                    <!-- <h2 class="head-gibson col-12" style="color: transparent;">OCTOBER 2019</h2> -->
 
                 <label>
                     <span class="circle" style="background: #FFD477;"></span> K-CONTENT
@@ -701,16 +684,16 @@
             </div>
         </section>
 
-        <section class="col-xs-12 section section-map">
+        <section class="col-12 section section-map">
             <div class="inner-section">
-                <div class="col-xs-12" align="left">
+                <div class="col-12" align="left">
                     <h2 class="head-gibson main-head"><i class="h2-icon map-marker-icon"></i> JAKARTA EVENT MAP</h2>
                 </div>
-                <div class="col-xs-12">
-                    <div class="col-xs-12 col-sm-6 map-containerx" >
+                <div class="col-12">
+                    <div class="col-12 col-sm-6 map-containerx" >
                         <img class="image-map" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/k-festival-2019-map.png" width="100%" alt="K-Festival Event Map" title="K-Festival Event Map"/>
                     </div>
-                    <div class="col-xs-12 col-sm-6 image-right">
+                    <div class="col-12 col-sm-6 image-right">
                         <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/k-festival-2019-map-legend.png" width="100%" alt="K-Festival 2019 Map Legend" title="K-Festival 2019 Map Legend"/>
                     </div>
                     
@@ -718,9 +701,9 @@
             </div>
         </section>
 
-        <section class="col-xs-12 section section-seo">
+        <section class="col-12 section section-seo">
             <h2>Flying </h2>
-            <p>Bagi Anda yang tertarik dengan <strong><b<>budaya Korea</b></strong>, Anda wajib menyaksikan <strong><b>Korea Festival 2019</b></strong>. Berbagai pagelaran budaya Korea bisa Anda saksikan. Salah satu pertunjukan yang harus Anda saksikan adalah Flying. Flying adalah pentas komedi tanpa dialog yang bercerita tentang kisah Dokkebi (monster Korea) dan Hwarang (prajurit Korea) yang menjelajahi waktu dari masa lalu ke masa sekarang. Flying merupakan pagelaran pertunjukan yang mengkombinasikan olahraga senam irama, seni bela diri, pemandu sorak, B-Boying dan olahraga senam. Pertunjukan Flying ini bisa menjadi pertunjukan Korea yang berbeda dan belum pernah Anda saksikan sebelumnya. </p>
+            <p>Bagi Anda yang tertarik dengan <strong><b>budaya Korea</b></strong>, Anda wajib menyaksikan <strong><b>Korea Festival 2019</b></strong>. Berbagai pagelaran budaya Korea bisa Anda saksikan. Salah satu pertunjukan yang harus Anda saksikan adalah Flying. Flying adalah pentas komedi tanpa dialog yang bercerita tentang kisah Dokkebi (monster Korea) dan Hwarang (prajurit Korea) yang menjelajahi waktu dari masa lalu ke masa sekarang. Flying merupakan pagelaran pertunjukan yang mengkombinasikan olahraga senam irama, seni bela diri, pemandu sorak, B-Boying dan olahraga senam. Pertunjukan Flying ini bisa menjadi pertunjukan Korea yang berbeda dan belum pernah Anda saksikan sebelumnya. </p>
 
             <h2>K-Pop Concert</h2>
             <p>Kpoppers pasti selalu update dengan berbagai festival Korea. Pada tanggal 19-20 Oktober 2019 ini, Anda dapat menyaksikan acara terbesar selama <strong><b>K-Festival 2019</b></strong>. Acara besar tersebut adalah <strong><b>K-Pop Concert</b></strong> yang dimeriahkan oleh DIA, JBJ95, VAV, Akdong Musician, Kim Jong-Kuk, GWSN untuk tanggal 19 Oktober 2019 dan pada 20 Oktober 2019 ada Skull&HaHa, Shinee Tae-Min, Hwang Chi-Yeul dan The Rose. K-Pop concert ini akan diselenggarakan di Istora Senayan Jakarta. Anda bisa hadir pada acara <strong><b>K-Culture Festa</b></strong> 2019, selain K-Pop Concert, Anda juga bisa menyaksikan Gyeonggi Culture, Turism Exhibition, K-POP Cover Dance & Sing Tournament dan tidak ketinggalan K-Culture Experience Event. </p>
@@ -735,3 +718,4 @@
         <br>
     </div>
 </template>
+

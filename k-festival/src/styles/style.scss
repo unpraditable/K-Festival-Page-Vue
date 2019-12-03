@@ -30,47 +30,47 @@ $border_color_1: #808080;
 @font-face {
 	font-family: 'KGSecondChancesSolid';
 	font-style: normal;
-	src: url("../fonts/KGSecondChancesSolid.eot");
-	src: url("../fonts/KGSecondChancesSolid.ttf") format("truetype"),url("../fonts/KGSecondChancesSolid.woff") format("woff");
+	src: url("./fonts/KGSecondChancesSolid.eot");
+	src: url("./fonts/KGSecondChancesSolid.ttf") format("truetype"),url("./fonts/KGSecondChancesSolid.woff") format("woff");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'DIN Regular';
 	font-style: normal;
-	src: url("../fonts/DIN_Regular.eot");
-	src: url("../fonts/DIN_Regular.otf") format("opentype"),url("../fonts/DIN_Regular.ttf") format("truetype"),url("../fonts/DIN_Regular.woff") format("woff");
+	src: url("./fonts/DIN_Regular.eot");
+	src: url("./fonts/DIN_Regular.otf") format("opentype"),url("./fonts/DIN_Regular.ttf") format("truetype"),url("./fonts/DIN_Regular.woff") format("woff");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Gibson Semibold';
 	font-style: normal;
-	src: url("../fonts/Gibson-SemiBold.otf") format("opentype");
+	src: url("./fonts/Gibson-SemiBold.otf") format("opentype");
 	// src: url("../fonts/HelveticaNeueLTStd-Md.otf") format("opentype"),url("../fonts/HelveticaNeueLTStd-Md.ttf") format("truetype"),url("../fonts/HelveticaNeueLTStd-Md.woff") format("woff");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Gibson Regular';
 	font-style: normal;
-	src: url("../fonts/Gibson-Regular.ttf");
+	src: url("./fonts/Gibson-Regular.ttf");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Gotham';
 	font-style: normal;
-	src: url("../fonts/Gotham-Medium.otf") format("opentype"),url("../fonts/Gotham-Medium.woff") format("woff");
+	src: url("./fonts/Gotham-Medium.otf") format("opentype"),url("./fonts/Gotham-Medium.woff") format("woff");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Helvetica Neue';
 	font-style: normal;
-	src: url("../fonts/HelveticaNeueLTStd-Md.otf") format("opentype"),url("../fonts/HelveticaNeueLTStd-Md.ttf") format("truetype"),url("../fonts/HelveticaNeueLTStd-Md.woff") format("woff");
+	src: url("./fonts/HelveticaNeueLTStd-Md.otf") format("opentype"),url("./fonts/HelveticaNeueLTStd-Md.ttf") format("truetype"),url("./fonts/HelveticaNeueLTStd-Md.woff") format("woff");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Poetsen One';
 	font-style: normal;
-	src: url("../fonts/PoetsenOne-Regular.ttf") format("truetype");
+	src: url("./fonts/PoetsenOne-Regular.ttf") format("truetype");
 	font-weight: normal;
 }
 
@@ -169,7 +169,7 @@ $border_color_1: #808080;
 	&.calendar-icon{
 		width: 24px;
 		height: 24px;
-		background: url("../img/calendar-icon (2).png");
+		background: url("./img/calendar-icon (2).png");
 		background-repeat: no-repeat;
 		background-size: contain;
 		@media only screen and (max-width: 767px) {
@@ -180,7 +180,7 @@ $border_color_1: #808080;
 	&.map-marker-icon{
 		width: 24px;
 		height: 24px;
-		background: url("../img/location-icon.png");
+		background: url("./img/location-icon.png");
 		background-repeat: no-repeat;
 		background-size: contain;
 		@media only screen and (max-width: 767px) {
@@ -191,7 +191,7 @@ $border_color_1: #808080;
 	&.event-icon{
 		width: 24px;
 		height: 24px;
-		background: url("../img/event-icon.png");
+		background: url("./img/event-icon.png");
 		background-repeat: no-repeat;
 		background-size: contain;
 		@media only screen and (max-width: 767px) {
@@ -231,6 +231,7 @@ $border_color_1: #808080;
 }
 body {
 	font: normal 12px/1.5 Arial, Helvetica, Sans-serif;
+	margin: 0;
 }
 
 .con_category{
@@ -502,7 +503,7 @@ span {
 			&.k-sale-festa-anchor-list{
 				position: relative;
 				&:after{
-					background: url(../img/on-sale.png);
+					background: url(./img/on-sale.png);
 					position: absolute;
 					width: 45px;
 					height: 45px;
@@ -514,7 +515,7 @@ span {
 				}
 				@media only screen and (max-width: 768px) {
 					&:after{
-						background: url(../img/on-sale.png);
+						background: url(./img/on-sale.png);
 						position: absolute;
 						width: 25px;
 						height: 25px;
@@ -555,7 +556,7 @@ span {
 						position: absolute;
 						top: 10%;
 						left: 20%;
-						background-image: url(../img/camar-left.png);
+						background-image: url(./img/camar-left.png);
 						content: "";
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -566,7 +567,7 @@ span {
 						position: absolute;
 						top: 70%;
 						right: 10%;
-						background-image: url(../img/camar-right.png);
+						background-image: url(./img/camar-right.png);
 						content: "";
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -575,10 +576,10 @@ span {
 					}
 					&:hover{
 						&:before{
-							background-image: url(../img/camar-left-biru.png);
+							background-image: url(./img/camar-left-biru.png);
 						}
 						&:after{
-							background-image: url(../img/camar-right-biru.png);
+							background-image: url(./img/camar-right-biru.png);
 						}
 					}
 					@media only screen and (max-width: 768px) {
@@ -603,7 +604,7 @@ span {
 						position: absolute;
 						top: 10%;
 						left: 10%;
-						background-image: url(../img/stars-white.png);
+						background-image: url(./img/stars-white.png);
 						content: "";
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -614,7 +615,7 @@ span {
 						position: absolute;
 						top: 10%;
 						right: 8%;
-						background-image: url(../img/mic-white.png);
+						background-image: url(./img/mic-white.png);
 						content: "";
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -623,10 +624,10 @@ span {
 					}
 					&:hover{
 						&:before{
-							background-image: url(../img/stars.png);
+							background-image: url(./img/stars.png);
 						}
 						&:after{
-							background-image: url(../img/mic.png);
+							background-image: url(./img/mic.png);
 						}
 					}
 					@media only screen and (max-width: 768px) {
@@ -664,10 +665,10 @@ span {
 				border: 5px solid #00AEF0;
 				color: #00AEF0;
 				&:before{
-					background-image: url(../img/camar-left-biru.png);
+					background-image: url(./img/camar-left-biru.png);
 				}
 				&:after{
-					background-image: url(../img/camar-right-biru.png);
+					background-image: url(./img/camar-right-biru.png);
 				}
 				
 			}
@@ -679,10 +680,10 @@ span {
 				border: 5px solid #A5238F;
 				color: #A5238F;
 				&:before{
-					background-image: url(../img/stars.png);
+					background-image: url(./img/stars.png);
 				}
 				&:after{
-					background-image: url(../img/mic.png);
+					background-image: url(./img/mic.png);
 				}
 			}
 			&.k-sale-festa-anchor{
@@ -1071,7 +1072,7 @@ span {
 				cursor: pointer;
 				&.map-anchor-wrapper{
 					&:before{
-						background: url("../img/location-icon.png");
+						background: url("./img/location-icon.png");
 						width: 15px;
 						height: 15px;
 						background-repeat: no-repeat;
@@ -1083,7 +1084,7 @@ span {
 				}
 				&.calendar-anchor-wrapper{
 					&:before{
-						background: url("../img/calendar-icon\ \(2\).png");
+						background: url("./img/calendar-icon\ \(2\).png");
 						width: 15px;
 						height: 15px;
 						background-repeat: no-repeat;
@@ -1468,7 +1469,7 @@ span {
 							}
 							&:before{
 								content: "";
-								background: url(../img/map-pin.png) no-repeat;
+								background: url(./img/map-pin.png) no-repeat;
 								width: 12px;
 								height: 12px;
 								display: inline-block;
@@ -1478,7 +1479,7 @@ span {
 							@media only screen and (min-width: 768px) {
 								&:before{
 									content: "";
-									background: url(../img/map-pin.png) no-repeat;
+									background: url(./img/map-pin.png) no-repeat;
 									width: 16px;
 									height: 19px;
 									display: inline-block;

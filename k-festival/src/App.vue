@@ -1,18 +1,32 @@
 <script>
-import Header from './components/Header.vue'
-
+import Header from './components/Header.vue';
+import EventList from './components/Events/EventList.vue';
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    EventList
   }
 }
 </script>
 
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+  <div id="app" class="k-festival-wrap">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Header />
+
+    <div class="container main clearfix" style="overflow: hidden;">
+        <div class="row">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <EventList/>
+                </div>
+            </div>		
+        </div>
+    </div>
   </div>
 </template>
+
+<style lang="scss">
+  @import "./styles/style.scss";
+</style>

@@ -1,8 +1,9 @@
+
 <template>
     <div class="k-festival-wrap">
         <div class="header-img-container">
-            <img class="background-body visible-xs" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/header-bg.png" width="100%"/>
-            <img class="background-body hidden-xs" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/background.jpg" width="100%"/>
+            <img class="background-body d-block d-sm-none" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/header-bg.png" width="100%"/>
+            <img class="background-body d-none d-sm-block" src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/background.jpg" width="100%"/>
             <div class="container-fluid">
                 <ul class="nav nav-tabs main-tabs" role="tablist">
                     <li role="presentation" class="event-anchor-list">
