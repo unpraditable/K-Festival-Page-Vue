@@ -16,13 +16,11 @@ export default {
     <Header />
 
     <div class="container main clearfix" style="overflow: hidden;">
-        <div class="row">
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                    <EventList/>
-                </div>
-            </div>		
-        </div>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <EventList/>
+            </div>
+        </div>		
     </div>
   </div>
 </template>
