@@ -7,10 +7,10 @@
             <div class="container-fluid">
                 <ul class="nav nav-tabs main-tabs" role="tablist">
                     <li role="presentation" class="event-anchor-list">
-                        <a href="#events" aria-controls="event" class="event-anchor" >Highlight</a>
+                        <router-link to="/" aria-controls="event" class="event-anchor" >Highlight</router-link>
                     </li>
                     <li role="presentation" class="korea-ticket-anchor-list">
-                        <a href="#liburan-gratis-ke-korea" title="Liburan Gratis Ke Korea" class="korea-ticket-anchor">Liburan Gratis ke Korea</a>
+                        <router-link to="/passport" title="Liburan Gratis Ke Korea" class="korea-ticket-anchor">Liburan Gratis ke Korea</router-link>
                     </li>
                     <!-- <li role="presentation" class="k-pop-festival-anchor-list">
                         <a class="k-pop-festival-anchor" href="#k-pop-concert">K-Pop Festival</a>

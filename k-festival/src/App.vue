@@ -1,11 +1,11 @@
 <script>
 import Header from './components/Header.vue';
-import Event from './components/Events/Event.vue';
+
+
 export default {
   name: 'app',
   components: {
-    Header,
-    Event
+    Header
   }
 }
 </script>
@@ -18,7 +18,7 @@ export default {
     <div class="container main clearfix" style="overflow: hidden;">
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
-                <Event/>
+                <router-view></router-view>
             </div>
         </div>		
     </div>
