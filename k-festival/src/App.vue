@@ -1,11 +1,11 @@
 <script>
 import Header from './components/Header.vue';
-import EventList from './components/Events/EventList.vue';
+import Event from './components/Events/Event.vue';
 export default {
   name: 'app',
   components: {
     Header,
-    EventList
+    Event
   }
 }
 </script>
@@ -18,7 +18,7 @@ export default {
     <div class="container main clearfix" style="overflow: hidden;">
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
-                <EventList/>
+                <Event/>
             </div>
         </div>		
     </div>
