@@ -16,7 +16,7 @@
                         <a class="k-pop-festival-anchor" href="#k-pop-concert">K-Pop Festival</a>
                     </li> -->
                     <li role="presentation" class="performance-ticket-anchor-list">
-                        <a class="performance-ticket-anchor" href="#tiket-pertunjukkan-gratis" title="Tiket Pertunjukkan Gratis">Tiket Pertunjukkan Gratis</a>
+                        <router-link to="/free-tickets" class="performance-ticket-anchor" title="Tiket Pertunjukkan Gratis">Tiket Pertunjukkan Gratis</router-link>
                     </li>
                     <li role="presentation" class="k-sale-festa-anchor-list">
                         <a href="https://www.ilotte.com/promo-korean-festival-000000131515.do?ch=ETCTS5WKIV" class="k-sale-festa-anchor">Korean Bazaar</a>
