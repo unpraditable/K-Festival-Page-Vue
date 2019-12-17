@@ -1,6 +1,8 @@
 <script>
+
     export default {
-        name: 'Passport'
+        name: 'Passport',
+        
     }
 </script>
 
@@ -10,13 +12,13 @@
             <section class="col-12 marquee-section hidden-xs" >
                 <div class="row">
                     <div class="col-5">
-                        <h2 onclick="smoothScroll('#passport-to-korea')">PASSPORT TO KOREA</h2>
+                        <a href="#passport-to-korea" v-smooth-scroll>PASSPORT TO KOREA</a>
                     </div>
                     <div class="col-6">
-                        <h2 onclick="smoothScroll('#temukan-mimpimu')">TEMUKAN MIMPIMU & INSPIRASIMU</h2>
+                        <a href="#temukan-mimpimu" v-smooth-scroll>TEMUKAN MIMPIMU & INSPIRASIMU</a>
                     </div>
                     <div class="col-1">
-                        <h2 onclick="smoothScroll('#sns-competition')">SNS</h2>
+                        <a href="#sns-competition" v-smooth-scroll>SNS</a>
                     </div>
                 </div>
                 
