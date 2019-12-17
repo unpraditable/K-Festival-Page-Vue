@@ -10,7 +10,7 @@
             }
         },
         created() {
-            axios.get(`http://localhost:8081/data/EventList.json`)
+            axios.get(`http://localhost:8080/data/EventList.json`)
             .then(response => {
             // JSON responses are automatically parsed.
                 this.events = response.data.data.event_list;

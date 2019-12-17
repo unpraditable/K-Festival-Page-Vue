@@ -8,8 +8,8 @@
 
 <template>
     <section class="col-12 section passport-page">
-        <div class="col-sm-10 offset-1">
-            <section class="col-12 marquee-section hidden-xs" >
+        <div class="col-sm-10 offset-sm-1">
+            <section class="col-12 marquee-section d-none d-sm-block" >
                 <div class="row">
                     <div class="col-5">
                         <a href="#passport-to-korea" v-smooth-scroll>PASSPORT TO KOREA</a>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-8 offset-2">
+                    <div class="col-sm-8 offset-sm-2">
                         <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/passport.jpg" class="img-fluid" alt="Passport to K-Festival">
                     </div>
                 </div>

@@ -21,15 +21,12 @@
 <template>
     <div class="col-12 content no-pad">
         <section class="col-12 section section-navigation">
-            
-            <a class="anchor-wrapper map-anchor-wrapper pull-right hidden-xs" onclick="smoothScroll('.section-map')">
+            <a href="#section-map" class="anchor-wrapper map-anchor-wrapper float-right d-none d-sm-block" v-smooth-scroll>
                 MAP
             </a>
-            <a class="anchor-wrapper calendar-anchor-wrapper pull-right hidden-xs" onclick="smoothScroll('.section-calendar')">
+            <a href="#section-calendar" class="anchor-wrapper calendar-anchor-wrapper float-right d-none d-sm-block" v-smooth-scroll>
                 CALENDAR
             </a>
-            
-
         </section>
         <EventBanner />
         <EventList />

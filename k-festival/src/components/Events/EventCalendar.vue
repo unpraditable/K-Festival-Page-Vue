@@ -143,7 +143,7 @@ export default {
 </script>
 
 <template>
-    <section class="col-12 section section-calendar">
+    <section id="section-calendar" class="col-12 section section-calendar">
         <div class="row">
             <div class="col-12" align="left"> 
                 <h2 class="head-gibson main-head"><span class="h2-icon calendar-icon"></span> EVENT CALENDAR OCTOBER & NOVEMBER 2019</h2>

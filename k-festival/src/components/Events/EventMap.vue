@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="col-12 section section-map">
+    <section id="section-map" class="col-12 section section-map">
         <div class="inner-section">
             <div class="col-12" align="left">
                 <h2 class="head-gibson main-head"><i class="h2-icon map-marker-icon"></i> JAKARTA EVENT MAP</h2>
