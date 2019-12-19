@@ -6,7 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    eventList : []
+    eventList : [],
+    event : []
   },
   
   getters: {
@@ -19,6 +20,12 @@ export default new Vuex.Store({
         .then(response => {
             commit('pushEvents', response.data.data.event_list)
         })
+    },
+    loadEventDetail({commit}) {
+        axios.get(`http://localhost:8080/data/EventDetail.json`)
+        .then(response => {
+            commit('viewEvent', response.data.data.event_detail)
+        })
     }
   },
   
@@ -26,5 +33,8 @@ export default new Vuex.Store({
     pushEvents(state, eventList) {
         state.eventList = eventList
     },
+    viewEvent(state, event) {
+        state.event = event
+    }
   }
 });

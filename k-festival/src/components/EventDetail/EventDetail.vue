@@ -1,92 +1,47 @@
 <script>
+    import { mapState } from 'vuex'
 
-    function findSlug(data, slug) {
-        let array = [];
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].slug == slug) {
-                array.push(data[i]);
-            }
-        }
-        return array;
-    }
 
-    import axios from 'axios';
     export default {
+
         name: 'EventDetail',
         
-        data() {
-            return {
-                event: []
-            }
-        },
-        created() {
-            const slug = route.params.id;
-            axios.get(`http://localhost:8080/data/EventDetail.json`)
-            .then(res => {
-                const event = res.data.data.event_detail;
-                var eventItem = findSlug(event, slug);
-                this.setState({eventItem});
-            })
+        computed: mapState({
+            eventList: state => state.eventList
+        }),
+        created () {
+            this.$store.dispatch('loadEvents')
         }
     }
 </script>
 
 <template>
-    <div className="col-12 event-detail">
-        {
-            this.state.eventItem.map(item =>
-                
-                <div className="col-sm-10 ml-auto mr-auto">
-                    <Helmet>
-                        <title>iLOTTE - {item.title}</title>
-                    </Helmet>
-                    <h1 className="heading">{item.title}</h1>
-                    <p className="event-detail-date">
-                        <strong dangerouslySetInnerHTML={ {__html: item.date} }></strong>
-                    </p>
-
-                    <br/>
-
-                    <a href={item.location_map}  title={item.location_title} dangerouslySetInnerHTML={ {__html: item.location} }></a>
-
-                    <div className="row">
-                        <div className="col-12 img-container">
-                            <img src={item.image} width="100%" alt={item.title} />
-                        </div>
-                    </div>
-                    <hr/>
-                    <p className="desc" dangerouslySetInnerHTML={ {__html: item.content} }></p>
-
-                    <div className="event-sns-wrapper">
-                    { 
-                        item.twitter_link ? (
-                            <a href={item.twitter_link}  title="KCC Indonesia Twitter" className="event-sns">
-                                <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-twitter.png" alt="Twitter Icon" />
-                            </a>
-                        ) : (null)
-                    }
-
-                    { 
-                        item.facebook_link ? (
-                            <a href={item.facebook_link}   title="KCC Indonesia Facebook" className="event-sns">
-                                <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-facebook.png" alt="Facebook Icon" />
-                            </a>
-                        ) : (null)
-                    }
-
-                    { 
-                        item.instagram_link ? (
-                            <a href={item.instagram_link}   title="KCC Indonesia Instagram" className="event-sns">
-                                <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-instagram.png" alt="Instagram Icon" />
-                            </a>
-                        ) : (null)
-                    }
-                        
-                    </div>
-                    
+    <div class="col-xs-12 event-detail">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h1 class="heading">FLYING</h1>
+            <p class="event-detail-date"><b>16 - 17 Oktober 2019</b></p>
+            <a href="https://g.page/artpreneur" title="Ciputra Artpreneur" >
+                <h4>VENUE: Ciputra Artpreneur Theater</h4>
+            </a>
+            <div class="row">
+                <div class="col-xs-12 img-container">
+                    <img src="https://ecm-stg-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/events/%5BPoster%5DNon-Verbal%20Performance%20%27Flying%27%20revised.jpg" width="100%" alt="FLYING Poster" />
                 </div>
-            )
-        }
-            
+            </div>
+            <hr>
+            <p class="desc">FLYING adalah pertunjukan komedi non-verbal yang menceritakan kisah Hwarang (prajurit Korea) dan Dokkebi (monster Korea) yang datang dari masa lalu ke masa sekarang.</p>
+            <p class="desc">Mereka bergabung dengan tim pemandu sorak sekolah menengah dan ikut berpartisipasi dalam sebuah kompetisi. FLYING adalah pertunjukan yang memadukan olahraga senam, senam irama, pemandu sorak, seni bela diri dan B-boying. Pertunjukan ini adalah pertujukan fantasi yang belum pernah dilihat sebelumnya. </p>
+            <div class="event-sns-wrapper">
+                <a href="https://twitter.com/kcc_indonesia"  title="KCC Indonesia Twitter" class="event-sns">
+                    <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-twitter.png" alt="Twitter Icon">
+                </a>
+                <a href="https://www.facebook.com/KCCIndonesia/"  title="KCC Indonesia Facebook" class="event-sns">
+                    <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.instagram.com/kcc.id"  title="KCC Indonesia Instagram" class="event-sns">
+                    <img src="https://ecm-prd-pub.s3.ap-southeast-1.amazonaws.com/kfestival/assets/img/sns-button-instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
     </div>
 </template>

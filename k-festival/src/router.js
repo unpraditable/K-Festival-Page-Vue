@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Event from './components/Events/Event.vue';
 import Passport from './components/Passport/Passport.vue';
 import FreeTickets from './components/FreeTickets/FreeTickets.vue';
+import EventDetail from './components/EventDetail/EventDetail.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
         { 
             path: '/free-tickets', 
             component: FreeTickets 
+        },
+        {
+            path: '/events/:slug',
+            component: EventDetail
         }
     ]
 });
