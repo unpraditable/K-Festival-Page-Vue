@@ -474,7 +474,6 @@ span {
 	background-color: #E8F7FC;
 	background-size: auto;
 	margin-bottom: -25px;
-	padding-bottom: 25px;
 }
 
 .header-img-container{
@@ -2406,7 +2405,7 @@ th.fc-day-header.fc-widget-header {
 				}
 			}
 			.section.section-calendar {
-				padding: 0 0 15px;
+				padding: 0 15px 15px;
 				.calendar {
 					.legend {
 						font-size: 10px;
@@ -2418,7 +2417,7 @@ th.fc-day-header.fc-widget-header {
 				}
 			}
 			.section.section-event {
-				padding: 30px 0px;
+				padding: 30px 15px;
 				.event-body {
 					.event-list-item {
 						.event-item-thumbnail {

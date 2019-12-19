@@ -21,6 +21,8 @@ export default {
         return {
             defaultDate: '2019-10-01',
             firstDay: 2,
+            contentHeight: 'auto',
+            calendarWeekends: true,
             calendarPlugins: [ 
                 dayGridPlugin 
             ],
@@ -156,7 +158,12 @@ export default {
                 :firstDay="firstDay"
                 :defaultDate="defaultDate"
                 :plugins="calendarPlugins"
-                :events="calendarEvents" />
+                :events="calendarEvents" 
+                :header="{
+                    left:'',
+                    center: '',
+                    right: ''
+                }" />
             </div>
             <div class="col-sm-2 calendar-legend" align="right">
                     <!-- <h2 class="head-gibson col-12" style="color: transparent;">OCTOBER 2019</h2> -->
