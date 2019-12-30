@@ -26,7 +26,8 @@ export default new Router({
         },
         {
             path: '/events/:slug',
-            component: EventDetail
+            component: EventDetail,
+            props: true
         }
     ]
 });

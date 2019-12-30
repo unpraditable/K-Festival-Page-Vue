@@ -21,25 +21,25 @@ import { mapState } from 'vuex'
         </div>
         <div class="col-12 event-body">
             <div class="event-list-item row" v-for="event in eventList" :key="event">
-                <div :class="[event.category + ` col-2 col-md-1 event-item-thumbnail`]" v-html="event.date">
+                <div :class="`col-2 col-md-1 event-item-thumbnail ${event.category }`" v-html="event.date">
                 </div>
                 <div class="col-4 col-md-3 event-thumb">
-                    <a :href=event.slug :title=event.title>
+                    <router-link :to="`/events/${event.slug}`" :title=event.title>
                         <img :src=event.image width="100%" :alt=event.title />
-                    </a>
+                    </router-link>
                 </div>
                 <div class="col-6 col-md-8 event-item-caption">
-                    <a :href=event.slug :title=event.title>
+                    <router-link :to="`/events/${event.slug}`"  :title=event.title>
                         <h3>{{event.title}}</h3>
-                    </a>
+                    </router-link>
                     <a :href=event.location_map :title=event.location >
                         <h4>{{event.location}}</h4>
                     </a>
                     <label class="event-label">{{event.category}}</label>
                     <p class="excerpt d-none d-sm-block">{{event.excerpt}}</p>
-                    <a :href=event.slug :title=event.title class="view-button d-none d-sm-block">
+                    <router-link :to="`/events/${event.slug}`" :title=event.title class="view-button d-none d-sm-block">
                         VIEW DETAIL <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>

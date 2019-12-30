@@ -6,12 +6,24 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    eventList : [],
-    event : []
+      eventList : [],
+      eventDetail : []
   },
   
   getters: {
-    // Here we will create a getter
+      // getEventFromSlug: state => state.eventDetail
+      getEventFromSlug: state => {
+        return state.eventDetail.filter(e => e.slug === this.$route.params.slug)
+      },
+      getEventBySlug: (state) => (slug) => {
+        return state.eventDetail.find(event => event.slug === slug)
+      }
+      // getEventFromSlug: state => {
+      //     state.event.filter(function(event) {
+      //         return event.slug === this.$route.params.slug
+      //     })
+      // },
+      
   },
   
   actions: {
@@ -22,10 +34,20 @@ export default new Vuex.Store({
         })
     },
     loadEventDetail({commit}) {
+
         axios.get(`http://localhost:8080/data/EventDetail.json`)
         .then(response => {
             commit('viewEvent', response.data.data.event_detail)
         })
+        // const slug = this.$route.params.slug
+        // console.log(slug);
+        // axios.get(`http://localhost:8080/data/EventDetail.json`)
+        // .then(response => {
+        //     response.data.data.event_detail.filter(function(c) {
+        //         return c.slug === slug;
+        //     })[0];
+        //     commit('viewEvent', response.data.data.event_detail)
+        // })
     }
   },
   
@@ -33,8 +55,9 @@ export default new Vuex.Store({
     pushEvents(state, eventList) {
         state.eventList = eventList
     },
-    viewEvent(state, event) {
-        state.event = event
+    viewEvent(state, eventDetail) {
+        state.eventDetail = eventDetail
+        
     }
   }
 });
