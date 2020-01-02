@@ -6,7 +6,12 @@ export default {
   name: 'app',
   components: {
     Header
-  }
+  },
+  watch: {
+    '$route' (to, from) {
+      document.title = to.meta.title || 'K-Festival 2019'
+    }
+  },
 }
 </script>
 

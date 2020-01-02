@@ -1,8 +1,6 @@
 <script>
-    import { mapState } from 'vuex'
 
     export default {
-
         name: 'EventDetail',
         created () {
             this.$store.dispatch('loadEventDetail')
@@ -10,6 +8,17 @@
         computed: {
             getEvent() {
                 return this.$store.getters.getEventBySlug(this.$route.params.slug)
+            },
+           
+        },
+         head() {
+                return {
+                    title: getEvent().title,
+                }
+            },
+        data () {
+            return {
+                title: getEvent().title,
             }
         }
     }
@@ -17,6 +26,10 @@
 
 <template>
     <div class="event-detail">
+        <vue-headful
+            :title="`${getEvent.title}`"
+            description="Description from vue-headful"
+        />
         <div class="col-sm-10 offset-sm-1">
             <h1 class="heading">{{getEvent.title}}</h1>
             <p class="event-detail-date"><b>{{getEvent.date}}</b></p>

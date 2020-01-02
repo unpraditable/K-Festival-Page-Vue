@@ -14,15 +14,24 @@ export default new Router({
     routes: [
         { 
             path: '/', 
-            component: Event 
+            component: Event,
+            meta: {
+                title: "iLotte K-Festival 2019" 
+            }
         },
         { 
             path: '/passport', 
-            component: Passport 
+            component: Passport,
+            meta: {
+                title: "Passport to Korea" 
+            }
         },
         { 
             path: '/free-tickets', 
-            component: FreeTickets 
+            component: FreeTickets,
+            meta: {
+                title: "Free Tickets To Korea" 
+            }
         },
         {
             path: '/events/:slug',
