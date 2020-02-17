@@ -8,7 +8,6 @@ import EventDetail from './components/EventDetail/EventDetail.vue'
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
     base: __dirname,
     linkExactActiveClass: 'active',
     routes: [
