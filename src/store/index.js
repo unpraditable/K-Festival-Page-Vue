@@ -28,14 +28,14 @@ export default new Vuex.Store({
   
   actions: {
     loadEvents({commit}) {
-        axios.get(`http://localhost:8080/data/EventList.json`)
+        axios.get(`https://unpraditable.github.io/K-Festival-Remake-With-React/data/EventList.json`)
         .then(response => {
             commit('pushEvents', response.data.data.event_list)
         })
     },
     loadEventDetail({commit}) {
 
-        axios.get(`http://localhost:8080/data/EventDetail.json`)
+        axios.get(`https://unpraditable.github.io/K-Festival-Remake-With-React/data/EventDetail.json`)
         .then(response => {
             commit('viewEvent', response.data.data.event_detail)
         })
