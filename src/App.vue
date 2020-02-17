@@ -8,7 +8,7 @@ export default {
     Header
   },
   watch: {
-    '$route' (to, from) {
+    '$route' (to) {
       document.title = to.meta.title || 'K-Festival 2019'
     }
   },
