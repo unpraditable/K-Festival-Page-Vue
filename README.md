@@ -1,2 +1,24 @@
-# K-Festival-Page-Vue
-The remake of iLotte K-Festival page (https://www.ilotte.com/k-festival) with Vue JS as my personal project portfolio
+# k-festival
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
